@@ -6,6 +6,10 @@
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 500px) {
+    margin-top: 10rem;
+  }
 }
 
 .score {
@@ -13,6 +17,9 @@
   font-weight: 300;
   color: #2f2f2f;
   margin-bottom: auto;
+  @media only screen and (max-width: 500px) {
+    margin-top: auto;
+  }
 }
 
 .player--active {
@@ -82,15 +89,32 @@
 
   &--new {
     top: 4rem;
+
+    @media only screen and (max-width: 500px) {
+      top: 7rem;
+    }
   }
 
   &--roll {
     top: 39.3rem;
+
+    @media only screen and (max-width: 500px) {
+      left: 50%;
+      top: 45%;
+      transform: translateX(-50%);
+    }
   }
 
   &--hold {
     top: 46.1rem;
+
+    @media only screen and (max-width: 500px) {
+      left: 50%;
+      top: 53%;
+      transform: translateX(-50%);
+    }
   }
+
   &:active {
     transform: translate(-50%, 3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -109,6 +133,12 @@
   height: 10rem;
   width: auto;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 500px) {
+  
+      height: 5rem;
+      width: 5rem;
+    
 }
 
 .player--winner {
@@ -146,6 +176,10 @@
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
+
+  @media only screen and (max-width: 500px) {
+      top: 60%;
+    }
 
   &:focus {
     outline: none;
