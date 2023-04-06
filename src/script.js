@@ -45,7 +45,8 @@ const swichPlayer = function () {
 btnRoll.addEventListener('click', function () {
   if (playing) {
     const dice = Math.trunc(Math.random() * 6) + 1;
-    diceEl.src = `./img/dice-${dice}.png`;
+
+    diceEl.src = `./dice-${dice}.png`;
 
     diceEl.classList.remove('hidden');
 

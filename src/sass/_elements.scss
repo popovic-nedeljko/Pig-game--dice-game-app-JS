@@ -135,10 +135,9 @@
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 
   @media only screen and (max-width: 500px) {
-  
-      height: 5rem;
-      width: 5rem;
-    
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .player--winner {
@@ -178,8 +177,8 @@
   transition: all 0.2s;
 
   @media only screen and (max-width: 500px) {
-      top: 60%;
-    }
+    top: 60%;
+  }
 
   &:focus {
     outline: none;
